@@ -1,0 +1,59 @@
+{
+  "start_time": "2024-12-27 00:00:00",
+  "end_time": "2024-12-27 23:59:59",
+  "leo_sp3_file": ["D:\\csu\\dataset\\DROL-GNSS\\DROL_REF\\DROL_REF_20241226.sp3",
+    "D:\\csu\\dataset\\DROL-GNSS\\DROL_REF\\DROL_REF_20241227.sp3",
+    "D:\\csu\\dataset\\DROL-GNSS\\DROL_REF\\DROL_REF_20241228.sp3"
+  ],
+  "leo_satellite": "L02",
+  "gnss_sp3_file": ["D:\\csu\\dataset\\DROL-GNSS\\GNSS\\WUM0MGXFIN_20243610000_01D_05M_ORB.SP3", 
+  "D:\\csu\\dataset\\DROL-GNSS\\GNSS\\WUM0MGXFIN_20243620000_01D_05M_ORB.SP3", 
+  "D:\\csu\\dataset\\DROL-GNSS\\GNSS\\WUM0MGXFIN_20243630000_01D_05M_ORB.SP3"
+],
+  "igs_atx": "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN\\inputdata\\GNSS\\igs20.atx",
+  "attitude_file": "D:\\csu\\dataset\\DROL-GNSS\\ATT-L1B\\DROL_20243620.ATT",
+  "diagnostic_csv": "D:\\csu\\dataset\\DROL-GNSS\\Obs_pco\\PCO_20241227_diagnostic.csv",
+  "time_key_decimals": 3,
+  "sp3_epoch_match_tolerance_s": 60.0,
+  "sp3_interpolation_max_gap_s": 900.0,
+  "attitude_nearest_max_gap_s": 60.0,
+  "attitude_reference_frame": "inertial",
+  "attitude_matrix_direction": "inertial_to_body",
+  "attitude_time_scale": "UTC",
+  "observation_time_scale": "GPS",
+  "gps_utc_leap_seconds": 18.0,
+  "gnss_pco_frame": "rtn_nadir",
+  "obs_rules": {
+    "correct_prefixes": ["C", "P", "L"],
+    "exclude_obs_types": []
+  },
+  "output_obs_types": ["C1C", "C2S", "L1C", "L2S", "C2I", "C6I", "L2I", "L6I"],
+  "antennas": [
+    {
+      "name": "ANT2",
+      "input_rinex": "D:\\csu\\dataset\\DROL-GNSS\\Obs_dualfreq\\DL0200LEO_20243620.rnx",
+      "output_rinex": "D:\\csu\\dataset\\DROL-GNSS\\Obs_pco\\DL0200LEO_20243620_PCO_test.rnx",
+      "com_to_apc_body_m": [0.7492, -0.181, 0.1653],
+      "pco": [0.7492, -0.181, 0.1653]
+    },
+    {
+      "name": "ANT1",
+      "input_rinex": "D:\\csu\\dataset\\DROL-GNSS\\Obs_dualfreq\\DL0100LEO_20243620.rnx",
+      "output_rinex": "D:\\csu\\dataset\\DROL-GNSS\\Obs_pco\\DL0100LEO_20243620_PCO_test.rnx",
+      "com_to_apc_body_m": [-0.7664, -0.169, 0.1579],
+      "pco": [-0.7664, -0.169, 0.1579]
+    }
+  ],
+  "wavelengths": {
+    "G:L1C": 0.190293672798365,
+    "G:L2S": 0.244210213424568,
+    "G:L2W": 0.244210213424568,
+    "G:L5Q": 0.254828048790854,
+    "C:L1P": 0.192039486310276,
+    "C:L2I": 0.192039486310276,
+    "C:L6I": 0.236332464604421,
+    "C:L5P": 0.254828048790854,
+    "E:L1C": 0.190293672798365,
+    "E:L5Q": 0.254828048790854
+  }
+}

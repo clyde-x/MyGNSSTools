@@ -1,0 +1,31 @@
+# Python caches and local editor history
+__pycache__/
+*.py[cod]
+.history/
+.vscode/
+
+# Local data and generated analysis/plot products
+data/
+output/
+analysis_output/
+diff_visual_result/
+*_analysis_output/
+*_figures/
+*_summary.csv
+*.png
+*.svg
+*.csv
+*.sp3
+*.rnx
+*.zip
+
+# Third-party FAST distribution includes platform binaries; the plotting code no
+# longer depends on it directly.
+Fast/
+
+# Local time-synchronization inputs, outputs, references and duplicate agent copy
+time_sync/data/
+time_sync/out/
+time_sync/ref/
+time_sync/agent/
+time_sync/agent.zip

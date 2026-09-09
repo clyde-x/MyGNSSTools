@@ -1,0 +1,21 @@
+{
+  "output_dir": "../../data/DROL/residual_figures",
+  "pattern": "*_RDOD_Res_*.dat",
+  "recursive": true,
+  "combine_datasets": false,
+  "plot": {
+    "dpi": 300,
+    "scatter_size": 2.0,
+    "alpha": 0.42,
+    "time_clip_percent": 5.0,
+    "sky_color_percentile": 95.0,
+    "cmap": "coolwarm"
+  },
+  "datasets": [
+    {
+      "name": "priorityV2",
+      "folder": "../../data/DROL/LOG/priorityV2"
+    }
+    
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "output_root": "D:\\csu\\MyTools\\analysis_output\\DROL_batch",
+  "pod_root": "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN\\outputdata",
+  "log_root": "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN\\LOG",
+  "pre_root": "D:\\csu\\dataset\\DROL_data",
+  "reference_solution": "single_antenna_mix",
+  "residual_mode": "RDOD",
+  "plot_residuals": true,
+  "plot_orbit_differences": true,
+  "solutions": {
+    "single_antenna_mix": {
+      "pod_directory": "DROL_REF_MIX_batch",
+      "log_directory": "DROL_REF_MIX_batch",
+      "sp3_prefix": "DROL_REF_MIX_",
+      "label": "Single-antenna GPS+BDS"
+    },
+    "dual_antenna_mix": {
+      "pod_directory": "DROL_FINAL_MIX_batch",
+      "log_directory": "DROL_FINAL_MIX_batch",
+      "sp3_prefix": "DROL_FINAL_MIX_",
+      "label": "Dual-antenna GPS+BDS"
+    },
+    "dual_antenna_gps": {
+      "pod_directory": "DROL_FINAL_GPS_batch",
+      "log_directory": "DROL_FINAL_GPS_batch",
+      "sp3_prefix": "DROL_FINAL_GPS_",
+      "label": "Dual-antenna GPS-only"
+    },
+    "dual_antenna_bds": {
+      "pod_directory": "DROL_FINAL_BDS_batch",
+      "log_directory": "DROL_FINAL_BDS_batch",
+      "sp3_prefix": "DROL_FINAL_BDS_",
+      "label": "Dual-antenna BDS-only"
+    }
+  },
+  "observation": {
+    "data_root": "D:\\csu\\dataset\\DROL-GNSS",
+    "focus_day": "20241227",
+    "satellite_threshold": 4
+  },
+  "l1b_frequency": {
+    "data_root": "D:\\csu\\dataset\\DROL-GNSS\\GNSS-L1B",
+    "focus_day": "20241227"
+  },
+  "force_rtn": {
+    "input_file": "D:\\csu\\dataset\\DROL-GNSS\\FORCES\\FORCE_RTN.DAT",
+    "max_points": 12000
+  },
+  "arc": {
+    "data_root": "D:\\csu\\dataset\\DROL-GNSS",
+    "focus_day": "20241227",
+    "gap_factor": 1.5
+  },
+  "attitude": {
+    "data_root": "D:\\csu\\dataset\\DROL-GNSS\\ATT-L1B",
+    "days": ["20241226", "20241227", "20241228", "20241229", "20241230"]
+  },
+  "dop": {
+    "receiver_satellite": "L02",
+    "systems": [
+      {"label": "GPS", "prefixes": ["G"]},
+      {"label": "BDS", "prefixes": ["C"]},
+      {"label": "GPS+BDS", "prefixes": ["G", "C"]}
+    ],
+    "reference_orbits": [
+      "D:\\csu\\dataset\\DROL-GNSS\\DROL_REF\\DROL_REF_20241226.sp3",
+      "D:\\csu\\dataset\\DROL-GNSS\\DROL_REF\\DROL_REF_20241227.sp3",
+      "D:\\csu\\dataset\\DROL-GNSS\\DROL_REF\\DROL_REF_20241228.sp3",
+      "D:\\csu\\dataset\\DROL-GNSS\\DROL_REF\\DROL_REF_20241229.sp3",
+      "D:\\csu\\dataset\\DROL-GNSS\\DROL_REF\\DROL_REF_20241230.sp3"
+    ],
+    "precise_gnss_products": [
+      "D:\\csu\\dataset\\DROL-GNSS\\GNSS\\WUM0MGXFIN_20243610000_01D_05M_ORB.SP3",
+      "D:\\csu\\dataset\\DROL-GNSS\\GNSS\\WUM0MGXFIN_20243620000_01D_05M_ORB.SP3",
+      "D:\\csu\\dataset\\DROL-GNSS\\GNSS\\WUM0MGXFIN_20243630000_01D_05M_ORB.SP3",
+      "D:\\csu\\dataset\\DROL-GNSS\\GNSS\\WUM0MGXFIN_20243640000_01D_05M_ORB.SP3",
+      "D:\\csu\\dataset\\DROL-GNSS\\GNSS\\WUM0MGXFIN_20243650000_01D_05M_ORB.SP3"
+    ],
+    "configurations": [
+      {
+        "label": "Ant1",
+        "color": "#0072B2",
+        "rinex_files": [
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_dualfreq\\DL0100LEO_20243610.rnx",
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_dualfreq\\DL0100LEO_20243620.rnx",
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_dualfreq\\DL0100LEO_20243630.rnx",
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_dualfreq\\DL0100LEO_20243640.rnx",
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_dualfreq\\DL0100LEO_20243650.rnx"
+        ]
+      },
+      {
+        "label": "Ant2",
+        "color": "#D55E00",
+        "rinex_files": [
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_dualfreq\\DL0200LEO_20243610.rnx",
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_dualfreq\\DL0200LEO_20243620.rnx",
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_dualfreq\\DL0200LEO_20243630.rnx",
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_dualfreq\\DL0200LEO_20243640.rnx",
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_dualfreq\\DL0200LEO_20243650.rnx"
+        ]
+      },
+      {
+        "label": "Fused",
+        "color": "#009E73",
+        "rinex_files": [
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_ant3\\DROL_20243610_AfterPCO_Merge2Ant.rnx",
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_ant3\\DROL_20243620_AfterPCO_Merge2Ant.rnx",
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_ant3\\DROL_20243630_AfterPCO_Merge2Ant.rnx",
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_ant3\\DROL_20243640_AfterPCO_Merge2Ant.rnx",
+          "D:\\csu\\dataset\\DROL-GNSS\\Obs_ant3\\DROL_20243650_AfterPCO_Merge2Ant.rnx"
+        ]
+      }
+    ]
+  },
+  "plot": {
+    "language": "English",
+    "font_size": 15,
+    "save_dpi": 300
+  }
+}

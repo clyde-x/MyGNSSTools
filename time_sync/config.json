@@ -1,0 +1,33 @@
+{
+  "file_path": {
+    "stat_file": "./data/hk/out.pos.stat",
+    
+    "gnss_sp3": "./data/hk/gnss.sp3",
+    "clk_file": "./data/hk/gnssclk.clk",
+    "obsA": "./data/hk/hkqt26001.rnx",
+    "obsB": "./data/hk/hkss26001.rnx",
+    "atx_igs": "./data/igs20.atx"
+  },
+  "refA":{
+    "mode" : "moving",
+    "pos" : [22.29103509, 114.213216, 5.17839],
+    "pos_file": "./data/hk/out.pos"
+  },
+  "refB":{
+    "mode" : "static",
+    "pos" : [22.43106796, 114.2692935, 38.71348],
+    "pos_file": ""
+  },
+  "exclude_sats": [],
+  "observations": ["PC", "LC"],
+  "system_list": ["G","C"],
+  "time_range": {
+    "start": "2026-01-01T00:00:00",
+    "end": "2026-01-01T23:29:00"
+  },
+  "output": {
+    "clockcsv": "./out/hk/clock_kf.csv",
+    "clockpng": "./out/hk/clock_kf.png",
+    "summary": "./out/hk/summary_kf.csv"
+  }
+}

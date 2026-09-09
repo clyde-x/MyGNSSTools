@@ -1,0 +1,69 @@
+{
+  "reference_files": "../../data/DROL/PRE",
+  "reference_label": "Reference orbit",
+  "comparisons": [
+    {
+      "name": "ant1",
+      "folder": "../../data/DROL/DROL_single_ant1_MIX_batch",
+      "style": {
+        "color": "#D55E00",
+        "marker": "o",
+        "linestyle": "--",
+        "lw": 1.2
+      }
+    },
+    {
+      "name": "ant2",
+      "folder": "../../data/DROL/DROL_single_ant2_MIX_batch",
+      "style": {
+        "color": "#E69F00",
+        "marker": "s",
+        "linestyle": "--",
+        "lw": 1.2
+      }
+    },
+    {
+      "name": "screen0",
+      "folder": "../../data/DROL/DROL_screen0_MIX_batch",
+      "style": {
+        "color": "#0072B2",
+        "marker": "^",
+        "linestyle": "-",
+        "lw": 1.2
+      }
+    },
+    {
+      "name": "priority",
+      "folder": "../../data/DROL/DROL_priority_MIX_batch",
+      "style": {
+        "color": "#009E73",
+        "marker": "D",
+        "linestyle": "-",
+        "lw": 1.2
+      }
+    },
+    {
+      "name": "hybrid5",
+      "folder": "../../data/DROL/DROL_hybrid5_MIX_batch",
+      "style": {
+        "color": "#CC79A7",
+        "marker": "P",
+        "linestyle": "-",
+        "lw": 1.2
+      }
+    }
+  ],
+  "title": "Orbit error against reference",
+  "kind": "scatter",
+  "view": "both",
+  "scatter_size": 3.0,
+  "start_time": "2024-12-26 00:00:00",
+  "end_time": "2024-12-31 23:59:59",
+  "unit": "mm",
+  "show_rmse": true,
+  "trim_percent": 5.0,
+  "grid": true,
+  "figsize": [13, 9],
+  "dpi": 300,
+  "output_path": "../../data/DROL/orbit_comparison.png"
+}

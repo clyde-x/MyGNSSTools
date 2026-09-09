@@ -1,0 +1,31 @@
+{
+  "output_dir": "../../data/DROL/satellite_count_figures",
+  "pattern": "*.rnx",
+  "recursive": true,
+  "dpi": 300,
+  "combine_datasets": true,
+  "dataset_colors": {
+    "priority": "#0072B2",
+    "ant1": "#D55E00"
+  },
+  "systems": ["ALL"],
+  "datasets": [
+    {
+      "name": "priority",
+      "folder": "../../data/DROL/Obs/dataediting/DROL_screen0_MIX_batch"
+    },
+    {
+      "name": "ant1",
+      "folder": "../../data/DROL/Obs/dataediting/DROL_single_ant1_MIX_batch"
+
+    },
+    {
+      "name": "ant2",
+      "folder": "../../data/DROL/Obs/dataediting/DROL_single_ant2_MIX_batch"
+    },
+    {
+      "name": "hybrid5",
+      "folder": "../../data/DROL/Obs/dataediting/DROL_hybrid5_MIX_batch"
+    }
+  ]
+}

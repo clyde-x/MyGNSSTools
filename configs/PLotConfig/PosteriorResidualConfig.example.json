@@ -1,0 +1,36 @@
+{
+  "output_dir": "../../data/DROL/residual_figures",
+  "pattern": "*_RDOD_Res_*.dat",
+  "recursive": true,
+  "combine_datasets": false,
+  "plot": {
+    "dpi": 300,
+    "scatter_size": 2.0,
+    "alpha": 0.42,
+    "time_clip_percent": 5.0,
+    "sky_color_percentile": 95.0,
+    "cmap": "coolwarm"
+  },
+  "datasets": [
+    {
+      "name": "ant1",
+      "folder": "../../data/DROL/LOG/DROL_single_ant1_MIX_batch"
+    },
+    {
+      "name": "ant2",
+      "folder": "../../data/DROL/LOG/DROL_single_ant2_MIX_batch"
+    },
+    {
+      "name": "screen0",
+      "folder": "../../data/DROL/LOG/DROL_screen0_MIX_batch"
+    },
+    {
+      "name": "priority",
+      "folder": "../../data/DROL/LOG/DROL_priority_MIX_batch"
+    },
+    {
+      "name": "hybrid5",
+      "folder": "../../data/DROL/LOG/DROL_hybrid5_MIX_batch"
+    }
+  ]
+}

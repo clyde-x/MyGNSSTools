@@ -1,0 +1,36 @@
+{
+  "pod_root": "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN\\outputdata",
+  "log_root": "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN\\LOG",
+  "pre_root": "D:\\csu\\dataset\\DROL_data",
+  "output_root": "D:\\csu\\MyTools\\analysis_output\\DROL_batch",
+  "reference_solution": "single_antenna_mix",
+  "solutions": {
+    "single_antenna_mix": {
+      "pod_directory": "DROL_REF_MIX_batch",
+      "log_directory": "DROL_REF_MIX_batch",
+      "sp3_prefix": "DROL_REF_MIX_",
+      "label": "Single-antenna GPS+BDS"
+    },
+    "dual_antenna_mix": {
+      "pod_directory": "DROL_FINAL_MIX_batch",
+      "log_directory": "DROL_FINAL_MIX_batch",
+      "sp3_prefix": "DROL_FINAL_MIX_",
+      "label": "Dual-antenna GPS+BDS"
+    },
+    "dual_antenna_gps": {
+      "pod_directory": "DROL_FINAL_GPS_batch",
+      "log_directory": "DROL_FINAL_GPS_batch",
+      "sp3_prefix": "DROL_FINAL_GPS_",
+      "label": "Dual-antenna GPS-only"
+    },
+    "dual_antenna_bds": {
+      "pod_directory": "DROL_FINAL_BDS_batch",
+      "log_directory": "DROL_FINAL_BDS_batch",
+      "sp3_prefix": "DROL_FINAL_BDS_",
+      "label": "Dual-antenna BDS-only"
+    }
+  },
+  "residual_mode": "RDOD",
+  "plot_residuals": true,
+  "plot_orbit_differences": true
+}

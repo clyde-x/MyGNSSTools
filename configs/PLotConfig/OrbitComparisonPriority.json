@@ -1,0 +1,29 @@
+{
+  "reference_files": "../../data/DROL/PRE",
+  "reference_label": "Reference orbit",
+  "comparisons": [
+    {
+      "name": "priority",
+      "folder": "../../data/DROL/sp3/DROL_priority_FINAL_6H_SP3_v2",
+      "style": {
+        "color": "#D55E00",
+        "marker": "o",
+        "linestyle": "--",
+        "lw": 1.2
+      }
+    }
+  ],
+  "title": "Orbit error against reference",
+  "kind": "scatter",
+  "view": "both",
+  "scatter_size": 3.0,
+  "start_time": "2024-12-26 00:00:00",
+  "end_time": "2024-12-28 23:59:59",
+  "unit": "mm",
+  "show_rmse": true,
+  "trim_percent": 5.0,
+  "grid": true,
+  "figsize": [13, 9],
+  "dpi": 300,
+  "output_path": "../../data/DROL/orbit_comparison.png"
+}

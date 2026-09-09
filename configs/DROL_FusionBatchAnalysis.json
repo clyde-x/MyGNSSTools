@@ -1,0 +1,36 @@
+{
+  "paths": {
+    "outputdata_root": "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN\\outputdata",
+    "log_root": "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN\\LOG",
+    "tempdata_root": "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN\\TempData",
+    "pre_root": "D:\\csu\\dataset\\DROL_data",
+    "output_root": "D:\\csu\\article\\DROL\\merge\\analysis\\pod_batch"
+  },
+  "date_range": {"start": "20241224", "end": "20250103"},
+  "raw_rinex_pattern": "D:\\csu\\dataset\\DROL-GNSS\\fusion\\{method}\\DROL_{tag}_{method}.rnx",
+  "quality": {"min_editing_epochs": 3000},
+  "plots": {
+    "enabled": true,
+    "dpi": 300,
+    "residual_multiday": true,
+    "posterior_phase_epoch_scatter": false,
+    "posterior_residual": {
+      "scatter_size": 2.0,
+      "alpha": 0.42,
+      "time_clip_percent": 0.0,
+      "sky_color_percentile": 95.0,
+      "cmap": "coolwarm"
+    },
+    "satellite_counts_multiday": true,
+    "pre_epoch_rms_ymax_cm": 100.0
+  },
+  "solutions": [
+    {"name": "single_ant1", "label": "Ant1", "batch": "DROL_single_ant1_MIX_batch", "prefix": "DROL_single_ant1_MIX_", "color": "#0072B2",
+      "raw_rinex_pattern": "D:\\csu\\dataset\\DROL-GNSS\\Obs_pco\\DL0100LEO_{tag}_PCO.rnx"},
+    {"name": "single_ant2", "label": "Ant2", "batch": "DROL_single_ant2_MIX_batch", "prefix": "DROL_single_ant2_MIX_", "color": "#56B4E9",
+      "raw_rinex_pattern": "D:\\csu\\dataset\\DROL-GNSS\\Obs_pco\\DL0200LEO_{tag}_PCO.rnx"},
+    {"name": "priority", "label": "Priority", "batch": "DROL_priority_MIX_batch", "prefix": "DROL_priority_MIX_", "color": "#009E73"},
+    {"name": "screen0", "label": "Screen 0", "batch": "DROL_screen0_MIX_batch", "prefix": "DROL_screen0_MIX_", "color": "#E69F00"},
+    {"name": "hybrid5", "label": "Hybrid 5 deg", "batch": "DROL_hybrid5_MIX_batch", "prefix": "DROL_hybrid5_MIX_", "color": "#D55E00"}
+  ]
+}

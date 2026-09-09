@@ -1,0 +1,33 @@
+{
+  "file_path": {
+    "stat_file": "./data/group2/out.pos.stat",
+    
+    "gnss_sp3": "./data/group2/WUM0MGXFIN_20261070000_01D_05M_ORB.SP3",
+    "clk_file": "./data/group2/WUM0MGXFIN_20261070000_01D_30S_CLK.clk",
+    "obsA": "./data/group2/RxCOM23.26O",
+    "obsB": "./data/group2/RxCOM28.26O",
+    "atx_igs": "./data/igs20.atx"
+  },
+  "refA":{
+    "mode" : "moving",
+    "pos" : [22.29103509, 114.213216, 5.17839],
+    "pos_file": "./data/group2/out.pos"
+  },
+  "refB":{
+    "mode" : "static",
+    "pos" : [40.071631, 116.275040, 85.6471],
+    "pos_file": ""
+  },
+  "observations": ["P1", "P2", "L1", "L2"],
+  "system_list": ["G", "C"],
+  "time_range": {
+    "start": "2026-04-17T00:00:00",
+    "end": "2026-04-17T23:55:00"
+  },
+  "exclude_sats": ["C01", "C06", "C10", "C14", "C40"],
+  "output": {
+    "clockcsv": "./out/group2/clock_kf.csv",
+    "clockpng": "./out/group2/clock_kf.png",
+    "summary": "./out/group2/summary_kf.csv"
+  }
+}

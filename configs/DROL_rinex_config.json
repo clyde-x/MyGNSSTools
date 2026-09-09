@@ -1,0 +1,46 @@
+{
+  "project_root": "..",
+  "paths": {
+    "raw_dir": "../dataset/DROL-GNSS/GNSS-L1B",
+    "merged_dir": "../GNSS_MIX/CSUAPPS/CSUPODSApp/BIN/inputdata/Obs/DRO/ANT3_MIX_STRICT30",
+    "output_dir": "output/rinex_analysis"
+  },
+  "date_range": {
+    "start": "2024-359",
+    "end": "2024-365"
+  },
+  "naming": {
+    "raw_filename_regex": "^DL0(?P<antenna>[12])00LEO_(?P<year>\\d{4})(?P<doy>\\d{3})0\\.rnx$",
+    "merged_filename_regex": "(?P<year>20\\d{2})(?P<doy>\\d{3})",
+    "extensions": [
+      ".rnx"
+    ],
+    "recursive": true,
+    "duplicate_policy": "error"
+  },
+  "analysis": {
+    "systems": [
+      "G",
+      "C"
+    ],
+    "satellite_validity": "phase",
+    "nominal_interval_seconds": 10.0,
+    "arc_gap_seconds": null,
+    "arc_gap_factor": 1.5,
+    "split_arc_on_lli": true,
+    "short_arc_seconds": 300.0,
+    "minimum_satellites": 6,
+    "snr_range": [
+      10.0,
+      70.0
+    ],
+    "write_epoch_csv": true,
+    "split_arc_on_epoch_flag": true
+  },
+  "plots": {
+    "satellite_count": true,
+    "arc_ecdf": true,
+    "snr_boxplot": true,
+    "max_snr_points_per_group": 20000
+  }
+}

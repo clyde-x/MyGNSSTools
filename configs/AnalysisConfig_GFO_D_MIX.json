@@ -1,0 +1,63 @@
+{
+  "sp3_diff" :
+  {
+    "root_path": "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN",
+    "sp3_file_1" : "outputdata\\GFO_D\\JPLD202450.PRE",
+    "newest": false,
+    "sp3_file_2" : "outputdata\\GFO_D\\BJ_JMDGSJ_0001_20200901000100_20200901235200_RDOD.sp3",
+    "set_time": false,
+    "start_time" : "2020-09-01 01:00:00",
+    "end_time" : "2020-09-01 23:00:00",
+    "output_path" : "analysis\\GFO_D\\",
+    "POD_type" : "RDOD",
+    "satellite" : "GFO_D",
+    "save_csv" : true
+  },
+  "plot_error":
+  {
+    "analysis_path" : "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN\\analysis\\GFO_D\\",
+    "POD_type" : "RDOD",
+    "name1" : "JPL",
+    "name2" : "RDOD",
+    "satellite" : "GFO_D",
+    "savefig" : true
+  },
+  "plot_log":
+  {
+    "enable": true,
+    "log_path" : "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN\\LOG\\GFO_D",
+    "date" : "20200901",
+    "satellite" : "GFO_D",
+    "savefig" : true,
+    "rmse": true,
+    "output_path" : "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN\\analysis\\GFO_D\\imgs\\",
+    "if_log": true,
+    "plot_log_path":"D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN\\analysis\\GFO_D\\imgs\\plot_log.txt",
+    "spp_log": true,
+    "spp_info": true,
+    "spp_res": true,
+    "rdod_res": true,
+    "kipp_res": true,
+    "dynfit_dyn": true,
+    "rdod_dyn": true,
+    "data_editing": true
+  },
+  "overlap_arc":
+  {
+    "enable": false,
+    "root_path": "D:\\csu\\GNSS_MIX\\CSUAPPS\\CSUPODSApp\\BIN",
+    "arc1":"outputdata\\GFO_D\\BJ_JMDGSJ_0001_20200901070010_20200901135950_RDOD.sp3",
+    "arc2":"outputdata\\GFO_D\\BJ_JMDGSJ_0001_20200901030030_20200901095940_RDOD.sp3",
+    "output_path":"analysis\\GFO_D\\imgs",
+    "auto_set_time": false,
+    "start_time" : "2020-09-01 08:00:00",
+    "end_time" : "2020-09-01 09:00:00",
+    "savefig" : true
+  },
+  "rinex":
+  {
+    "rinex_path" : "D:\\csu\\GFO-TEST\\OBS\\GFCN2450.20O",
+    "threshold" : 40
+  }
+}
+

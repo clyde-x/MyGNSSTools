@@ -1,0 +1,29 @@
+{
+  "date_range": {"start": "20241224", "end": "20250103"},
+  "inputs": {
+    "ant1": "D:\\csu\\dataset\\DROL-GNSS\\Obs_pco\\DL0100LEO_{tag}_PCO.rnx",
+    "ant2": "D:\\csu\\dataset\\DROL-GNSS\\Obs_pco\\DL0200LEO_{tag}_PCO.rnx",
+    "attitude": "D:\\csu\\dataset\\DROL-GNSS\\ATT-L1B\\DROL_{tag}.ATT",
+    "leo_sp3": "D:\\csu\\dataset\\DROL-GNSS\\DROL_REF\\DROL_REF_{date}.sp3",
+    "gnss_sp3": "D:\\csu\\dataset\\DROL-GNSS\\GNSS\\WUM0MGXFIN_{tag}000_01D_05M_ORB.SP3"
+  },
+  "output": {
+    "pattern": "D:\\csu\\dataset\\DROL-GNSS\\fusion\\{method}\\DROL_{tag}_{method}.rnx"
+  },
+  "methods": [
+    {"method": "single_ant1", "name": "single_ant1", "enabled": true},
+    {"method": "single_ant2", "name": "single_ant2", "enabled": true},
+    {"method": "priority", "name": "priority", "enabled": true,
+      "parameters": {"minimum_arc_seconds": 50}},
+    {"method": "geometry", "name": "geometry", "enabled": false,
+      "parameters": {"minimum_arc_seconds": 50, "hysteresis": 0.0}},
+    {"method": "geometry_hysteresis", "name": "geometry_hysteresis", "enabled": false,
+      "parameters": {"minimum_arc_seconds": 50, "hysteresis": 0.15}},
+    {"method": "geometry_screen", "name": "screen0", "enabled": true,
+      "parameters": {"minimum_score": 0.0, "minimum_arc_seconds": 50}},
+    {"method": "hybrid", "name": "hybrid5", "enabled": true,
+      "parameters": {"side_window_deg": 5.0, "minimum_switch_minutes": 20.0}},
+    {"method": "attitude_switch", "name": "hybrid0", "enabled": false,
+      "parameters": {"minimum_switch_minutes": 20.0}}
+  ]
+}
